@@ -33,4 +33,9 @@ public class UserController {
         User user=userService.findUserById(id);
         return ResponseEntity.ok(user);
     }
+    @GetMapping("/")
+    public String apiTesting()
+    {
+    return "Api Success";
+    }
 }
